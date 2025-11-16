@@ -1,7 +1,16 @@
 streamlit
-ultralytics
-opencv-python-headless
+pillow
 numpy
-Pillow
 pandas
-torch==2.2.0 --extra-index-url https://download.pytorch.org/whl/cpu
+
+# Use CPU-only PyTorch (compatible with Streamlit Cloud)
+torch==2.1.0+cpu
+torchvision==0.16.0+cpu
+torchaudio==2.1.0+cpu
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+# YOLO (ultralytics)
+ultralytics==8.1.0
+
+# OpenCV for cloud
+opencv-python-headless==4.8.1.78
