@@ -3,11 +3,14 @@ numpy
 pandas
 pillow
 
+# CPU-only PyTorch (required for Streamlit Cloud)
 --extra-index-url https://download.pytorch.org/whl/cpu
-torch==2.1.0+cpu
-torchvision==0.16.0+cpu
-torchaudio==2.1.0+cpu
+torch==2.0.1+cpu
+torchvision==0.15.2+cpu
+torchaudio==2.0.2+cpu
 
-ultralytics==8.1.0
+# YOLOv8 / Ultralytics
+ultralytics==8.0.196
 
-opencv-python-headless==4.8.1.78
+# OpenCV (Cloud-Compatible Build)
+opencv-python-headless==4.7.0.72
